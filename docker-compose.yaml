@@ -1,0 +1,13 @@
+version: "3"
+services:
+  qiushaocloud-mysql-server:
+    image: mysql:latest
+    container_name: qiushaocloud-mysql-server
+    hostname: qiushaocloud-mysql-server
+    ports:
+      - "$MYSQL_PORT:$MYSQL_CFG_PORT"
+    volumes:
+      - $MYSQL_DATA_PATH:/var/lib/mysql
+      - $MYSQLD_CNF_FILE_PATH:/etc/mysql/mysql.conf.d/mysqld.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
