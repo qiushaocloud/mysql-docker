@@ -8,6 +8,6 @@ services:
       - "$MYSQL_PORT:$MYSQL_CFG_PORT"
     volumes:
       - $MYSQL_DATA_PATH:/var/lib/mysql
-      - $MYSQLD_CNF_FILE_PATH:/etc/mysql/mysql.conf.d/mysqld.cnf
+      # - $MYSQL_CNF_FILE_PATH:/etc/mysql/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
