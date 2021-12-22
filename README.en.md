@@ -7,7 +7,7 @@ This is a mysql docker, please use docker-compose to run, configure according to
 
 1. Configure .env
 2. Run ./run-docker.sh
-3. View logs: docker logs qiushaocloud-gitlab-server
+3. View logs: docker logs qiushaocloud-mysql-server
 
 #### Participate in Contribution
 
