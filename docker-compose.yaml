@@ -4,6 +4,7 @@ services:
     image: mysql:latest
     container_name: qiushaocloud-mysql-server
     hostname: qiushaocloud-mysql-server
+    restart: always
     ports:
       - "$MYSQL_PORT:$MYSQL_CFG_PORT"
     volumes:
